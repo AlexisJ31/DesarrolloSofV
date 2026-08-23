@@ -1,7 +1,7 @@
 # Laboratorio 1: Configuración del Entorno y Trabajo Colaborativo
 
 ## 👥 Integrantes del Equipo
-* **Estudiante 1:** [Nombre y Apellido] - `@[UsuarioGitHub]`
+* **Estudiante 1:** [Alexis Jaen] - @AlexisJ31
 * **Estudiante 2:** [Nombre y Apellido] - `@[UsuarioGitHub]`
 * **Estudiante 3:** [Nombre y Apellido] - `@[UsuarioGitHub]`
 
