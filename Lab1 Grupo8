@@ -1,20 +1,4 @@
-Objetivo
-Crear y modificar un archivo HTML dentro de un repositorio existente utilizando GitHub Codespaces 
-
-Comandos a utilizar:
-
-git status
-git add
-git commit
-git push
-git log
-PARTE 1 — Entrar al repositorio - cada colaborador crea su rama
-PARTE 2 — Crear el Codespace
-PARTE 3 — Comprobar el repositorio - revisa su tarea
-PARTE 4 — Crear la página HTML  - hace los cambios solicitados
-archivo index.html
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -22,14 +6,27 @@ archivo index.html
 </head>
 <body>
     <h1>Deben seleccionar un tema</h1>
-     <h2>Integrantes</h2>.  
+
+    <h2>Integrantes</h2>
     <p>Nombre del estudiante 1</p>
     <p>Nombre del estudiante 2</p>
+    <p>Nombre del estudiante 3</p>
+
     <h2>Introducción</h2>
+    <p>Texto de introducción...</p>
+
     <h2>Contenido 1</h2>
+    <p>Desarrollo del punto 1...</p>
+
     <h2>Contenido 2</h2>
-    <h2>Conclusiones</h2
+    <p>Desarrollo del punto 2...</p>
+
+    <h2>Contenido 3</h2>
+    <p>Desarrollo del punto 3...</p>
+
+    <h2>Conclusiones</h2>
+    <p>Conclusión 1 (Estudiante 1)...</p>
+    <p>Conclusión 2 (Estudiante 2)...</p>
+    <p>Conclusión 3 (Estudiante 3)...</p>
 </body>
 </html>
-Parte 5. crea los commit
-Parte 6. subir a rama
