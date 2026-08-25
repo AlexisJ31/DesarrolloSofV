@@ -5,7 +5,7 @@
     <title>Laboratorio 1.1</title>
 </head>
 <body>
-    <h1>Deben seleccionar un tema</h1>
+    <h1>Hobbies y pasiones</h1>
 
     <h2>Integrantes</h2>
     <p>Alexis Jaen</p>
@@ -13,10 +13,14 @@
     <p>Nombre del estudiante 3</p>
 
     <h2>Introducción</h2>
-    <p>Texto de introducción...</p>
+    <p>Los hobbies son actividades que nos permiten desconectarnos de la rutina, expresarnos de manera creativa y fortalecer nuestra personalidad. En mi caso, el fútbol y la música han sido dos grandes pilares que influyen tanto en mi vida personal como en mi estado de ánimo. A través de ellos, he aprendido a valorar el esfuerzo, la disciplina y la constancia, además de encontrar momentos de alegría y motivación en el día a día.</p>
+    <p>El fútbol me ha enseñado la importancia del trabajo en equipo, la paciencia y la responsabilidad, mientras que la música me ofrece una forma de relajación, inspiración y conexión emocional. Estas dos pasiones no solo me acompañan en el tiempo libre, sino que también reflejan quién soy, mis gustos y la manera en que enfrento los desafíos de la vida cotidiana.</p>
 
     <h2>Contenido 1</h2>
-    <p>Desarrollo del punto 1...</p>
+    <h3>Fútbol y música: dos pasiones que marcan mi estilo de vida</h3>
+    <p>El fútbol es una de las actividades que más disfruto porque combina emoción, estrategia y competitividad. Ver un partido, practicarlo o simplemente seguir a mis equipos favoritos me permite vivir momentos intensos y compartir experiencias con otras personas. Además, el deporte me ayuda a mantenerme activo, a mejorar mi actitud y a desarrollar valores como la perseverancia y el respeto.</p>
+    <p>Cuando hablo de música, me refiero a una pasión que acompaña cada momento de mi día. Escuchar canciones de distintos géneros me permite relajarme, concentrarme y también expresar emociones que muchas veces no se pueden comunicar con palabras. La música crea un ambiente de inspiración y me acompaña en los momentos tranquilos, así como en los más energéticos.</p>
+    <p>Lo más interesante es que ambas actividades se complementan entre sí. Mientras el fútbol me da energía y entusiasmo, la música me da calma y motivación. Juntas forman una parte muy importante de mi identidad, porque me ayudan a equilibrar mi vida, a mantenerme positivo y a disfrutar de experiencias que me llenan como persona.</p>
 
     <h2>Contenido 2</h2>
     <p>Desarrollo del punto 2...</p>
@@ -25,7 +29,7 @@
     <p>Desarrollo del punto 3...</p>
 
     <h2>Conclusiones</h2>
-    <p>Conclusión 1 (Estudiante 1)...</p>
+    <p>En conclusión, el fútbol y la música son dos pasiones que han influido de manera positiva en mi vida. Me han ayudado a desarrollar disciplina, alegría y una mejor forma de enfrentar cada día con entusiasmo. Estas actividades no solo llenan mi tiempo libre, sino que también forman parte de mi personalidad y de la manera en que veo el mundo.</p>
     <p>Conclusión 2 (Estudiante 2)...</p>
     <p>Conclusión 3 (Estudiante 3)...</p>
 </body>
