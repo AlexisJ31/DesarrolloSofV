@@ -9,11 +9,11 @@
 
     <h2>Integrantes</h2>
     <p>Nombre del estudiante 1</p>
-    <p>Nombre del estudiante 2</p>
+    <p>José Muñoz</p>
     <p>Nombre del estudiante 3</p>
 
     <h2>Introducción</h2>
-    <p>Texto de introducción...</p>
+    <p>Los hobbies y pasatiempos son actividades que las personas realizan durante su tiempo libre por diversión, interés personal o entretenimiento. Estas actividades pueden incluir deportes, lectura, videojuegos, música, dibujo, cocina, entre muchas otras. Además de ser una forma de aprovechar el tiempo libre, los hobbies permiten desarrollar habilidades, reducir el estrés y mejorar el bienestar personal. Cada persona puede elegir un pasatiempo de acuerdo con sus gustos e intereses, convirtiéndolo en una actividad que contribuya tanto a su diversión como a su crecimiento personal.</p>
 
     <h2>Contenido 1</h2>
     <p>Desarrollo del punto 1...</p>
@@ -21,12 +21,13 @@
     <h2>Contenido 2</h2>
     <p>Desarrollo del punto 2...</p>
 
-    <h2>Contenido 3</h2>
-    <p>Desarrollo del punto 3...</p>
+    <h2>Importancia de los hobbies y pasatiempos</h2>
+    <p>Los hobbies y pasatiempos son importantes porque permiten aprovechar el tiempo libre, reducir el estrés y disfrutar de actividades que nos gustan. Además, ayudan a desarrollar nuevas habilidades y contribuyen al bienestar personal....</p>
 
     <h2>Conclusiones</h2>
     <p>Conclusión 1 (Estudiante 1)...</p>
-    <p>Conclusión 2 (Estudiante 2)...</p>
+    <p>Importancia de los hobbies y pasatiempos en la vida (José Muñoz)</p>
+    <p>En conclusión, los hobbies y pasatiempos son una parte importante de la vida, ya que permiten disfrutar del tiempo libre, reducir el estrés y desarrollar nuevas habilidades. Por esta razón, practicar actividades que nos gustan contribuye al bienestar y al crecimiento personal.</p>
     <p>Conclusión 3 (Estudiante 3)...</p>
 </body>
 </html>
