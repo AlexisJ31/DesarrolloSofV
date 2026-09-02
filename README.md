@@ -1,4 +1,4 @@
-# Laboratorio 1: Configuración del Entorno y Trabajo Colaborativo
+# Configuración del Entorno y Trabajo Colaborativo
 
 ## 👥 Integrantes del Equipo
 * **Estudiante 1:** [Alexis Jaen] - `@AlexisJ31`
