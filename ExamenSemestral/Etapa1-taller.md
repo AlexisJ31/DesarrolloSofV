@@ -19,10 +19,10 @@ Actualmente los estudiantes universitarios enfrentan serias dificultades para ac
 
 4. Funcionalidades
 ¿Qué podrá hacer el sistema?
-Gestion y vusualizacion de ofertas
-Repositorios de recursos descargables
-Foro de discucion y experiencia
-Gestion de perfiles y roles
+Gestion y vusualizacion de ofertas.
+Repositorios de recursos descargables.
+Foro de discucion y experiencia.
+Gestion de perfiles y roles.
 
 5. Requerimientos funcionales
 
