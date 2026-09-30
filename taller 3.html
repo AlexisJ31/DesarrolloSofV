@@ -3,56 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller 3 - Estudiantes</title>
+    <meta name="description" content="Conoce los cursos, el proceso de creación web y parte de nuestra comunidad estudiantil.">
+    <title>Desarrollo de Software | Portal académico</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Arial, sans-serif;
+            color: #203047;
+            background: #f3f6fb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 3rem 1.5rem;
+            color: white;
+            background: #183b65;
+        }
+
+        header div,
+        main,
+        footer {
+            width: min(100% - 2rem, 960px);
+            margin: 0 auto;
+        }
+
+        header p {
+            max-width: 650px;
+            color: #d7e7f7;
+        }
+
+        main {
+            padding: 1.5rem 0 3rem;
+        }
+
+        section {
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            border: 1px solid #e0e7f0;
+            border-radius: 12px;
+            background: white;
+        }
+
+        h1,
+        h2 {
+            line-height: 1.2;
+        }
+
+        h2 {
+            color: #183b65;
+        }
+
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 0.75rem;
+            padding: 0;
+            list-style: none;
+        }
+
+        .course-list li {
+            padding: 1rem;
+            border-left: 4px solid #3c82c4;
+            border-radius: 6px;
+            background: #f3f6fb;
+        }
+
+        .course-list strong {
+            display: block;
+            color: #183b65;
+        }
+
+        ol li {
+            padding: 0.35rem 0 0.35rem 0.25rem;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        caption {
+            padding: 0.75rem 0;
+            color: #52657d;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #e0e7f0;
+        }
+
+        thead {
+            color: white;
+            background: #183b65;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f3f6fb;
+        }
+
+        footer {
+            padding: 0 0 2rem;
+            color: #52657d;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Taller 3</h1>
+    <header>
+        <div>
+            <p>PORTAL ACADÉMICO</p>
+            <h1>Desarrollo de Software</h1>
+            <p>Aprende a transformar ideas en experiencias digitales. Explora algunas de las materias de la carrera, conoce cómo nace un sitio web y descubre a parte de nuestra comunidad estudiantil.</p>
+        </div>
+    </header>
 
-    <h2>A. Una lista no ordenada</h2>
-    <h3>Cursos que ofrece la carrera:</h3>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-    </ul>
+    <main>
+        <section aria-labelledby="cursos-titulo">
+            <h2 id="cursos-titulo">Lo que aprenderás</h2>
+            <p>Durante la carrera se combinan diseño, lógica y programación. Estos cursos ofrecen una base para construir proyectos web completos:</p>
+            <ul class="course-list">
+                <li><strong>HTML</strong>Organiza el contenido y define la estructura de cada página.</li>
+                <li><strong>CSS</strong>Da estilo a los sitios y adapta su presentación a distintos dispositivos.</li>
+                <li><strong>JavaScript</strong>Añade interacción y dinamismo a la experiencia de las personas.</li>
+                <li><strong>PHP</strong>Permite procesar información y desarrollar funciones del lado del servidor.</li>
+            </ul>
+        </section>
 
-    <h2>B. Una lista ordenada</h2>
-    <h3>Pasos para crear una página web:</h3>
-    <ol>
-        <li>Crear el archivo HTML.</li>
-        <li>Escribir la estructura.</li>
-        <li>Agregar contenido.</li>
-        <li>Guardar el archivo.</li>
-        <li>Abrirlo en el navegador.</li>
-    </ol>
+        <section aria-labelledby="proceso-titulo">
+            <h2 id="proceso-titulo">De una idea a una página web</h2>
+            <p>Un sitio no aparece de una sola vez: se construye poco a poco, desde la planificación hasta la revisión final.</p>
+            <ol>
+                <li><strong>Planifica el contenido:</strong> define el propósito del sitio y qué información necesitan sus visitantes.</li>
+                <li><strong>Prepara el documento:</strong> crea un archivo con extensión .html y agrega la estructura básica.</li>
+                <li><strong>Construye la página:</strong> organiza títulos, párrafos, listas y otros elementos con HTML.</li>
+                <li><strong>Guarda tus avances:</strong> conserva el archivo y revisa que el código esté ordenado.</li>
+                <li><strong>Comprueba el resultado:</strong> abre el documento en el navegador y corrige lo que sea necesario.</li>
+            </ol>
+        </section>
 
-    <h2>C. Una tabla</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Código</th>
-                <th>Estudiante</th>
-                <th>Carrera</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>001</td>
-                <td>Ana</td>
-                <td>Informática</td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Luis</td>
-                <td>Sistemas</td>
-            </tr>
-            <tr>
-                <td>003</td>
-                <td>María</td>
-                <td>Informática</td>
-            </tr>
-        </tbody>
-    </table>
+        <section aria-labelledby="comunidad-titulo">
+            <h2 id="comunidad-titulo">Nuestra comunidad estudiantil</h2>
+            <p>Cada estudiante aporta intereses y objetivos distintos. Aquí tienes una pequeña muestra de quienes forman parte de la comunidad:</p>
+            <div class="table-wrap">
+                <table>
+                    <caption>Estudiantes y programas académicos</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Estudiante</th>
+                            <th scope="col">Carrera</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>001</td><td>Ana</td><td>Informática</td></tr>
+                        <tr><td>002</td><td>Luis</td><td>Sistemas</td></tr>
+                        <tr><td>003</td><td>María</td><td>Informática</td></tr>
+                        <tr><td>004</td><td>Diego</td><td>Desarrollo de Software</td></tr>
+                        <tr><td>005</td><td>Camila</td><td>Sistemas</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Portal académico · Taller de Desarrollo Web</p>
+    </footer>
 </body>
 </html>
