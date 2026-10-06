@@ -3,7 +3,7 @@
 ## 👥 Integrantes del Equipo
 * **Estudiante 1:** [Alexis Jaen] - `@AlexisJ31`
 * **Estudiante 2:** [Michael Mendoza] - `@leeluch`
-* **Estudiante 3:** [Nombre y Apellido] - `@[UsuarioGitHub]`
+* **Estudiante 3:** [José Muñoz] - `@YocelPTY`
 
 ---
 
