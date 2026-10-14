@@ -1,0 +1,922 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #243044;
+    background-color: #f9fafb;
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 23px;
+}
+h2 {
+    font-size: 17px;
+}
+h3 {
+    font-size: 14px;
+}
+h4 {
+    font-size: 15px;
+}
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button, input, select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 12px;
+    border: 1px solid #dce3ed;
+    border-radius: 5px;
+    background-color: white;
+    color: #334155;
+}
+
+button:hover {
+    background-color: #eff6ff;
+}
+
+input, select {
+    padding: 9px 10px;
+    border: 1px solid #dce3ed;
+    border-radius: 5px;
+    background-color: white;
+    color: #263043;
+}
+
+input:focus, select:focus {
+    outline: 1px solid #2563eb;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e5eaf0;
+    margin: 15px 0;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+.pagina-acceso {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background-color: #fafbfc;
+}
+
+.pagina-acceso main {
+    width: 850px;
+    max-width: 100%;
+}
+
+.pagina-acceso main > section {
+    display: flex;
+    border: 1px solid #dde6f0;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.pagina-acceso main > section > div {
+    width: 50%;
+    padding: 38px;
+}
+
+.pagina-acceso main > section > div:last-child {
+    background-color: #eff6ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pagina-acceso h1 {
+    margin-bottom: 7px;
+}
+.pagina-acceso header p, .pagina-acceso main > section > div:last-child p {
+    color: #697586;
+}
+.pagina-acceso header {
+    margin-bottom: 22px;
+}
+.pagina-acceso form > div {
+    margin-bottom: 14px;
+}
+
+.pagina-acceso form label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.pagina-acceso input:not([type="checkbox"]) {
+    display: block;
+    width: 100%;
+    background-color: #fafbfc;
+}
+
+.pagina-acceso input[type="checkbox"] {
+    margin: 0 5px 0 0;
+}
+.pagina-acceso .fila-recordarme {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.pagina-acceso .fila-recordarme > div {
+    display: flex;
+    align-items: center;
+}
+.pagina-acceso .fila-recordarme label {
+    margin: 0;
+    font-weight: normal;
+}
+.pagina-acceso .fila-recordarme a {
+    font-size: 12px;
+}
+
+.pagina-acceso button[type="submit"] {
+    width: 100%;
+    color: white;
+    background-color: #2563eb;
+    border-color: #2563eb;
+    font-weight: bold;
+}
+
+.pagina-acceso button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+.pagina-acceso footer {
+    text-align: center;
+    margin-top: 18px;
+}
+.pagina-acceso footer p {
+    margin: 0;
+    font-size: 12px;
+    color: #697586;
+}
+
+.pagina-acceso main > section > div:last-child > div:first-child {
+    width: 122px;
+    height: 122px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.pagina-acceso main > section > div:last-child svg {
+    width: 75px;
+    height: 75px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 7px;
+    padding: 12px;
+}
+
+.pagina-acceso h2 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+.pagina-acceso main > section > div:last-child p {
+    max-width: 260px;
+    font-size: 13px;
+}
+
+.barra-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 10px 22px;
+    min-height: 56px;
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.barra-superior > div:first-child > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #334155;
+    white-space: nowrap;
+}
+
+.barra-superior > div:first-child svg {
+    width: 30px;
+    height: 30px;
+    background-color: #2563eb;
+    padding: 6px;
+    border-radius: 7px;
+    color: white;
+}
+
+.barra-superior > div:nth-child(2) {
+    flex: 1;
+    max-width: 400px;
+}
+.barra-superior input[type="search"] {
+    width: 100%;
+    background-color: #f8fafc;
+}
+.barra-superior > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.barra-superior > div:last-child > a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #334155;
+}
+.barra-superior > div:last-child button {
+    padding: 7px;
+    border: none;
+}
+
+.barra-superior img,
+.pagina-interna article img,
+.pagina-inicio .contenido > section img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.distribucion {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 14px 22px;
+    gap: 16px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.menu-lateral {
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+.menu-lateral nav {
+    background-color: white;
+    border: 1px solid #e7ebf0;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.menu-lateral ul, .barra-derecha ul, .filtros-laterales ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.menu-lateral li {
+    flex: 1;
+}
+
+.menu-lateral a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 9px;
+    border-radius: 5px;
+    color: #475569;
+}
+
+.menu-lateral a:hover {
+    background-color: #eaf2ff;
+    text-decoration: none;
+}
+.pagina-inicio .menu-lateral a[href="inicio.html"],
+.pagina-perfil .menu-lateral a[href="perfil.html"],
+.pagina-ofertas .menu-lateral a[href="ofertas.html"],
+.pagina-sobre .menu-lateral a[href="sobre_nosotros.html"] {
+    color: #2563eb;
+    background-color: #eaf2ff;
+    font-weight: bold;
+}
+
+.contenido {
+    flex: 1;
+    min-width: 0;
+}
+
+.pagina-inicio .contenido > section,
+.pagina-inicio .contenido > article,
+.pagina-perfil .contenido > section,
+.pagina-perfil .columnas-perfil > section > article,
+.pagina-perfil .columnas-perfil > aside > section,
+.pagina-ofertas .contenido > header,
+.pagina-ofertas .contenido > section > article,
+.pagina-sobre .contenido > section,
+.barra-derecha > section,
+.filtros-laterales > section {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 13px;
+}
+
+.pagina-inicio .contenido > section form > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pagina-inicio .contenido > section input {
+    width: 100%;
+    background-color: #f8fafc;
+}
+.pagina-inicio .contenido > section form > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.pagina-inicio .contenido > section form > div:last-child > div {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.pagina-inicio .contenido > section button[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+.pagina-inicio .contenido > section button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+.pagina-inicio .contenido > article header,
+.pagina-perfil .columnas-perfil article header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.pagina-inicio .contenido > article header > div,
+.pagina-perfil .columnas-perfil article header > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagina-inicio .contenido > article header h3,
+.pagina-perfil .columnas-perfil article header h3 {
+    margin: 0 0 4px;
+}
+
+.pagina-inicio .contenido > article header h3 span,
+.pagina-perfil .columnas-perfil article header h3 span {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+time, small {
+    color: #7b8796;
+    font-size: 12px;
+}
+.pagina-inicio .contenido > article header button,
+.pagina-perfil .columnas-perfil article header button {
+    border: none;
+    padding: 4px 8px;
+}
+
+.pagina-inicio .contenido > article h4,
+.pagina-perfil .columnas-perfil article h4 {
+    margin-bottom: 8px;
+}
+
+.pagina-inicio .contenido > article p,
+.pagina-perfil .columnas-perfil article p {
+    color: #526073;
+}
+
+.pagina-inicio .contenido > article footer,
+.pagina-perfil .columnas-perfil article footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pagina-inicio .contenido > article footer button,
+.pagina-perfil .columnas-perfil article footer button {
+    border: none;
+    padding: 7px 10px;
+    font-size: 12px;
+}
+
+.pagina-inicio .contenido > article > div > div {
+    padding: 12px;
+    border: 1px solid #dbeafe;
+    background-color: #eff6ff;
+    border-radius: 5px;
+}
+
+.pagina-inicio .contenido > article > div > div small {
+    display: block;
+    margin: 5px 0;
+}
+.barra-derecha {
+    width: 37%;
+    flex: 0 0 37%;
+}
+.barra-derecha h2, .filtros-laterales h2 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.barra-derecha li {
+    margin-bottom: 7px;
+}
+.barra-derecha li article {
+    border: 1px solid #e7ebf0;
+    border-radius: 5px;
+    padding: 10px;
+}
+.barra-derecha li:last-child article {
+    border: 1px solid #e7ebf0;
+}
+.barra-derecha li h3 {
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+.barra-derecha li p {
+    margin-bottom: 4px;
+    color: #516079;
+    font-size: 12px;
+}
+.barra-derecha li span {
+    display: block;
+    color: #7b8796;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.barra-derecha a {
+    font-size: 12px;
+}
+.barra-derecha section:last-child ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.barra-derecha section:last-child li {
+    padding: 5px 8px;
+    background: #f1f5f9;
+    border-radius: 5px;
+    margin: 0;
+}
+.barra-derecha section:last-child a {
+    color: #64748b;
+}
+
+.pagina-perfil .contenido > section:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+.pagina-perfil .contenido > section:first-child > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.pagina-perfil .contenido > section:first-child img {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+}
+.pagina-perfil .contenido > section:first-child h1 {
+    margin-bottom: 6px;
+}
+.pagina-perfil .contenido > section:first-child p {
+    color: #64748b;
+    margin-bottom: 4px;
+}
+.pagina-perfil .columnas-perfil {
+    gap: 17px;
+    align-items: flex-start;
+}
+.pagina-perfil .columnas-perfil > section {
+    flex: 1;
+    min-width: 0;
+}
+.pagina-perfil .columnas-perfil > aside {
+    flex: 0 0 255px;
+}
+.pagina-perfil .columnas-perfil nav {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+.pagina-perfil .columnas-perfil nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.pagina-perfil .columnas-perfil nav a {
+    display: block;
+    padding: 14px;
+}
+.pagina-perfil .columnas-perfil nav li:first-child a {
+    border-bottom: 2px solid #2563eb;
+}
+.pagina-perfil .columnas-perfil > aside ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+.pagina-perfil .columnas-perfil > aside li {
+    background: #eef3fa;
+    padding: 6px 9px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.pagina-perfil .columnas-perfil > aside h2 {
+    font-size: 16px;
+}
+.pagina-perfil .columnas-perfil > aside h3 {
+    font-size: 14px;
+}
+.pagina-perfil .columnas-perfil dl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+}
+.pagina-perfil .columnas-perfil dt {
+    color: #64748b;
+}
+.pagina-perfil .columnas-perfil dd {
+    color: #2563eb;
+    font-weight: bold;
+    margin: 0;
+}
+
+.filtros-laterales {
+    flex: 0 0 190px;
+}
+.filtros-laterales li {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 0;
+    border-bottom: 1px solid #eef2f7;
+    font-size: 12px;
+}
+.filtros-laterales span {
+    color: #64748b;
+}
+.pagina-ofertas .contenido > header h1 {
+    margin-bottom: 6px;
+}
+.pagina-ofertas .contenido > header p {
+    color: #64748b;
+}
+.pagina-ofertas .contenido > header form > div {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.pagina-ofertas .contenido > header input {
+    flex: 1;
+    min-width: 170px;
+}
+.pagina-ofertas .contenido > header button {
+    background-color: #2563eb;
+    color: white;
+}
+.pagina-ofertas .contenido > header select {
+    flex: 1;
+    min-width: 95px;
+}
+.pagina-ofertas .contenido > section > article h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.pagina-ofertas .contenido > section > article header > div,
+.pagina-ofertas .contenido > section > article footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.pagina-ofertas .contenido > section > article > div {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.pagina-ofertas .contenido > section > article > div span {
+    background-color: #eff6ff;
+    color: #2757a6;
+    padding: 6px 9px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.pagina-ofertas .contenido > section > article p {
+    color: #526073;
+}
+.pagina-ofertas .contenido > section > article footer > div {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    color: #64748b;
+    font-size: 12px;
+}
+.pagina-ofertas .contenido > section > article footer a {
+    background-color: #2563eb;
+    color: white;
+    border-radius: 5px;
+    padding: 9px 13px;
+    white-space: nowrap;
+}
+.pagina-ofertas .contenido > section > article footer a:hover {
+    background-color: #1d4ed8;
+    text-decoration: none;
+}
+
+.pagina-sobre .contenido {
+    max-width: 100%;
+}
+.pagina-sobre .contenido > section:first-child {
+    padding: 48px 24px;
+    background-color: #eaf2ff;
+    text-align: center;
+}
+.pagina-sobre .contenido > section:nth-child(2), .pagina-sobre .contenido > section:last-child {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pagina-sobre .contenido > section:first-child span,
+.pagina-sobre .contenido > section:last-child span {
+    color: #2563eb;
+    font-weight: bold;
+}
+.pagina-sobre .contenido > section p {
+    color: #64748b;
+}
+.pagina-sobre > footer {
+    background-color: white;
+    border-top: 1px solid #e2e8f0;
+    padding: 20px 28px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.pagina-sobre > footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.pagina-sobre > footer p {
+    margin: 0;
+}
+
+@media (max-width: 740px) {
+    .barra-derecha {
+    display: none;
+}
+    .menu-lateral {
+    width: 100%;
+}
+    .pagina-perfil .columnas-perfil {
+    flex-wrap: wrap;
+}
+    .pagina-perfil .columnas-perfil > aside {
+    flex: 1 1 100%;
+}
+}
+
+@media (max-width: 760px) {
+    .pagina-acceso main > section {
+    flex-direction: column;
+}
+    .pagina-acceso main > section > div {
+    width: 100%;
+    padding: 25px;
+}
+    .pagina-acceso main > section > div:last-child {
+    min-height: 215px;
+}
+    .barra-superior {
+    flex-wrap: wrap;
+    padding: 12px;
+}
+    .barra-superior > div:nth-child(2) {
+    order: 3;
+    width: 100%;
+    max-width: none;
+    flex: 1 1 100%;
+}
+    .barra-superior > div:last-child > a span {
+    display: none;
+}
+    .distribucion {
+    flex-wrap: wrap;
+    padding: 12px;
+    gap: 12px;
+}
+    .menu-lateral {
+    width: 100%;
+    flex: 1 1 100%;
+}
+    .menu-lateral ul {
+    flex-wrap: wrap;
+    gap: 6px;
+}
+    .menu-lateral li {
+    flex: 1 1 40%;
+}
+    .menu-lateral a {
+    font-size: 12px;
+    padding: 10px;
+}
+    .filtros-laterales {
+    flex: 1 1 100%;
+}
+    .contenido {
+    flex: 1 1 100%;
+}
+    .pagina-perfil .contenido > section:first-child {
+    flex-wrap: wrap;
+}
+    .pagina-perfil .columnas-perfil > section {
+    flex: 1 1 100%;
+}
+    .pagina-sobre > footer {
+    flex-wrap: wrap;
+}
+}
+
+@media (max-width: 420px) {
+    .barra-superior > div:first-child > a {
+    font-size: 12px;
+}
+    .pagina-inicio .contenido > section form > div:last-child {
+    flex-wrap: wrap;
+}
+    .pagina-inicio .contenido > section form > div:last-child > div {
+    width: 100%;
+}
+    .pagina-perfil .contenido > section:first-child > div {
+    flex-wrap: wrap;
+}
+}
+
+.pagina-inicio .contenido > section form > div:last-child > div button {
+    border: none;
+    background-color: white;
+    color: #526075;
+    padding: 6px 9px;
+}
+
+.pagina-inicio .contenido > section form > div:last-child button:hover {
+    background-color: #eff6ff;
+}
+
+.barra-superior > div:last-child button {
+    background-color: white;
+}
+
+.pagina-inicio .contenido > article footer button:hover,
+.pagina-perfil .columnas-perfil article footer button:hover {
+    color: #2563eb;
+}
+
+.pagina-inicio .contenido > article > div > div {
+    padding: 9px;
+}
+
+.pagina-ofertas .contenido > section {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.pagina-sobre .contenido > section:first-child h1 {
+    font-size: 27px;
+}
+
+@media (max-width: 600px) {
+    .barra-superior {
+        flex-wrap: nowrap;
+        padding: 8px 10px;
+        gap: 8px;
+    }
+
+    .barra-superior > div:first-child > a span {
+        display: none;
+    }
+
+    .barra-superior > div:nth-child(2) {
+        order: 0;
+        flex: 1;
+        width: auto;
+        min-width: 0;
+    }
+
+    .barra-superior > div:first-child svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .barra-superior > div:last-child {
+        gap: 5px;
+    }
+
+    .barra-superior > div:last-child img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .menu-lateral ul {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .menu-lateral li {
+        flex: 0 0 auto;
+    }
+
+    .menu-lateral a {
+        white-space: nowrap;
+    }
+
+    .pagina-acceso {
+        background-color: white;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .pagina-acceso main > section {
+        flex-direction: column-reverse;
+        border: none;
+        border-radius: 0;
+    }
+
+    .pagina-acceso main > section > div:first-child {
+        padding: 18px 24px 30px;
+    }
+
+    .pagina-acceso main > section > div:last-child {
+        padding: 36px 20px 0;
+        min-height: 0;
+        background-color: white;
+    }
+
+    .pagina-acceso main > section > div:last-child > div:last-child {
+        display: none;
+    }
+
+    .pagina-acceso main > section > div:last-child > div:first-child {
+        margin-bottom: 0;
+    }
+}
